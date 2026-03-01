@@ -2,7 +2,7 @@
 let namber;
 
 do{
-namber =prompt("iteration" )
+namber =prompt("iteration")
 
 }while(namber <=10);
 
