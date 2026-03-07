@@ -1,9 +1,9 @@
-let car={
+let car={ 
     make :"toyota",
     model :"rav4",
     year : 2002,
 
-    start : function(){
+    start : function(){ //marka aad rabto inaad ku darto method cusub object-ga, waxaad isticmaali kartaa function si aad ugu darto method-ka cusub object-ga   
         console.log("the car has started", this.model);
     }
 }
