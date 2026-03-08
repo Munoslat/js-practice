@@ -1,0 +1,9 @@
+{  
+   "id": 1,
+   "name": "John Doe",
+   "city": "New York",
+   "order": [
+        { "id": 101, "product": "Laptop", "quantity": 1 },       
+        { "id": 102, "product": "Mouse", "quantity": 2 }
+   ]
+ }
