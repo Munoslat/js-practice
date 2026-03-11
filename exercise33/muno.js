@@ -17,5 +17,6 @@ function changeText(){
 
 function changeElement (){
 
-  text.innerHTML = "this is my first website";
+  text.innerHTML = "<img src='https://i.pinimg.com/736x/1b/87/3c/1b873cfacaf75364e5a857deb2821920.jpg' alt=''>";
+  
 }
