@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363434;
+    padding: 10px 20px;
+}
+.navbar .navbar-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar .navbar-links ul{
+    list-style: none;
+    display: flex;
+}
+.navbar .navbar-links ul li{
+    margin-left: 20px;
+}
+.navbar .navbar-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+       text-align: center;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    cursor: pointer;
+}
+.toggle-button .bar{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 4px 0;
+}
+
+h1{
+    text-align: center;
+    padding: 20%;
+}
+.home-section{
+    background-color: cadetblue;
+    height: 100vh;
+}
+.about-section{
+    background-color:chartreuse;
+    height: 100vh;  
+
+}
+.services-section{
+    background-color:chocolate;
+    height: 100vh;
+}
+.portfolio-section{
+    background-color:cornflowerblue;
+    height: 100vh;
+}
+.blog-section{
+    background-color: darkorange;
+        height: 100vh;
+}
+.careers-section{
+    background-color:darkolivegreen;
+    height: 100vh;
+}
+.contact-section{
+    background-color:darkred;
+    height: 100vh;
+}
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .navbar .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .navbar-links ul li{
+        text-align: center;
+        margin: 10px 0;
+    }
+    .toggle-button{
+        display: flex;
+        position: relative;
+        top: -25px;
+        left: 92%;
+    
+    }
+    .navbar.active .navbar-links{
+        display: flex;
+    }
+    .navbar.active .toggle-button .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .navbar.active .toggle-button .bar:nth-child(2){
+        opacity: 0;
+    }
+    .navbar.active .toggle-button .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
