@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <h2>Translator App</h2>
+
+            <label>From:</label>
+            <select id="fromLang"></select>
+
+            <label>To:</label>
+            <select id="toLang"></select>
+
+            <textarea id="inputText" placeholder="Type text..."></textarea>
+
+            <button onclick="translateText()">Translate</button>
+
+            <h3>Result:</h3>
+            <div id="outputText"></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
