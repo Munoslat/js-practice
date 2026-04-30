@@ -1,0 +1,86 @@
+
+body {
+   background: rgb(53, 75, 50);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+}
+.container{
+  background: rgb(53, 75, 50);
+  width: 18%;
+  height: 430px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 80px 90px rgba(0, 0, 0, 0.3);
+  border: 1px solid  rgb(53, 75, 50);
+}
+
+  video {
+  width: 50%;
+  height: 200px;       
+  object-fit: cover;  
+  background: black;
+  border-radius: 10px;
+  margin-right: 50%;
+}
+
+.player {
+  width: 500px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 50%;
+}
+
+#volume {
+  margin-right: 100%;
+  width: 70px;
+  color: #99ca7a;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#current{
+  text-align: left;
+  justify-content: left;
+  margin-right: -80%;
+}
+#duration {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar {
+  width: 90%;
+  height: 8px;
+  background: #f6f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.progress {
+  width: 100%;
+  height: 100%;
+  background: rgb(141, 225, 120);
+  border-radius: 5px;
+}
+.label {
+  display: flex;
+justify-content: center;
+gap: 10%;
+}
+
+
